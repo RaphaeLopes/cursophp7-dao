@@ -37,9 +37,17 @@ $usuario = new Usuario("Novo", "ttrds");
 echo $usuario ->insert();
 */
 
+/*
 //Update Usuario
 $usuario = new Usuario();
 $usuario->loadById(9);
 $usuario->update("Vendo", "!$#43");
+echo $usuario;
+*/
+
+//DELETE Usuario
+$usuario = new Usuario();
+$usuario->loadById(9);
+$usuario->delete();
 echo $usuario;
  ?>
