@@ -29,10 +29,17 @@ $usuario->loadById(2);
 echo $usuario;
 */
 
-$aluno = new Usuario("Novo", "ttrds");
+/*
 
-$aluno->insert();
+//Insert Usuario
+$usuario = new Usuario("Novo", "ttrds");
 
-echo $aluno;
+echo $usuario ->insert();
+*/
 
+//Update Usuario
+$usuario = new Usuario();
+$usuario->loadById(9);
+$usuario->update("Vendo", "!$#43");
+echo $usuario;
  ?>
